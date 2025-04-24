@@ -18,11 +18,14 @@ function App() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <div className="flex flex-1">
-        { !showSideBar ? <Sidebar /> : <EditorSidebar /> }
+        { !showSideBar ? 
+          <Sidebar /> : 
+          <EditorSidebar /> 
+        }
         <main className="flex-1">
           <Routes>
             <Route path={`/${deploymentBase}`} element={<LandingPage />} />
-            <Route path={`/${deploymentBase}/site-editor`} element={<DragPage />} />
+            <Route path={`/${deploymentBase}site-editor`} element={<DragPage />} />
           </Routes>
           <Footer /> 
         </main>
