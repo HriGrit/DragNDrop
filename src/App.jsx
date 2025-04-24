@@ -13,7 +13,10 @@ function App() {
   const { pathname } = useLocation()
 
   const showSideBar = pathname === `/${deploymentBase}site-editor`;
-
+  console.log( `/${deploymentBase}site-editor` );
+  console.log( pathname );
+  console.log( 'env %s', deploymentBase );
+  
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
