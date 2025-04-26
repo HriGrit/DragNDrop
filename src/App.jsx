@@ -8,14 +8,11 @@ import Sidebar from "./components/Sidebar";
 import EditorSidebar from "./components/DragSidebar";
 
 function App() {
-  const deploymentBase = import.meta.env.VITE_DEPLOYMENT_KEY || '';
+  const deploymentBase = 'DragNDrop';
   
   const { pathname } = useLocation()
 
-  const showSideBar = pathname === `/${deploymentBase}site-editor`;
-  console.log( `/${deploymentBase}site-editor` );
-  console.log( pathname );
-  console.log( 'env %s', deploymentBase );
+  const showSideBar = pathname === `/${deploymentBase}/site-editor`;
   
   return (
     <div className="flex flex-col min-h-screen">
@@ -28,7 +25,7 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path={`/${deploymentBase}`} element={<LandingPage />} />
-            <Route path={`/${deploymentBase}site-editor`} element={<DragPage />} />
+            <Route path={`/${deploymentBase}/site-editor`} element={<DragPage />} />
           </Routes>
           <Footer /> 
         </main>
