@@ -4,6 +4,13 @@ export const ELEMENT_TYPES = {
     BUTTON: 'button',
 };
 
+export const DND_TYPES = {
+    ELEMENT_TYPE: 'application/react-flow-element-type',
+    EXISTING_ELEMENT_ID: 'application/react-flow-element-id',
+    DRAG_OFFSET_X: 'application/react-flow-offset-x',
+    DRAG_OFFSET_Y: 'application/react-flow-offset-y',
+};
+
 export const getDefaultProps = (type) => {
     switch (type) {
         case ELEMENT_TYPES.TEXT:

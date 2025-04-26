@@ -18,19 +18,19 @@ function App() {
   console.log( 'env %s', deploymentBase );
   
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       <Navbar />
       <div className="flex flex-1">
         { !showSideBar ? 
           <Sidebar /> : 
           <EditorSidebar /> 
         }
-        <main className="flex-1">
+        <main className="flex-1 h-dvh">
           <Routes>
             <Route path={`/${deploymentBase}`} element={<LandingPage />} />
             <Route path={`/${deploymentBase}site-editor`} element={<DragPage />} />
           </Routes>
-          <Footer /> 
+          <Footer />
         </main>
       </div>
     </div>
