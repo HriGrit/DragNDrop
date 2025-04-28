@@ -1,6 +1,19 @@
+/**
+ * @file LandingPage.jsx
+ * @description The landing page component for the website builder application.
+ *              Displays a welcome message and a button to navigate to the site editor.
+ */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+/**
+ * LandingPage - Presents the introductory UI with a call-to-action
+ *               to start building a website.
+ *
+ * @param {Function} [onStartBuilding] - Optional callback invoked when the "Start Building"
+ *                                        button is clicked.
+ * @returns {JSX.Element} The landing page markup.
+ */
 export default function LandingPage({ onStartBuilding }) {
   return (
     <div className="flex flex-col items-center justify-center mt-32 p-8 font-sans text-black">

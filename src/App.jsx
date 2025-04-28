@@ -22,7 +22,7 @@ function App() {
           <Sidebar /> : 
           <EditorSidebar /> 
         }
-        <main className="flex-1 h-dvh">
+        <main className="flex-1">
           <Routes>
             <Route path={`/${deploymentBase}`} element={<LandingPage />} />
             <Route path={`/${deploymentBase}/site-editor`} element={<DragPage />} />

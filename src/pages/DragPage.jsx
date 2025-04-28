@@ -15,7 +15,7 @@ function PropertiesEditor({ element, onUpdate, onDeselect }) {
 
   if (!element) {
     return (
-      <div className="w-full md:w-72 bg-[var(--sidebar-primary)] p-4 border-l border-gray-200 h-dvh flex-shrink-0 overflow-y-auto">
+      <div className="w-full md:w-72 bg-[var(--sidebar-primary)] p-4 border-l border-gray-200 max-h-[700px] flex-shrink-0 overflow-y-auto">
         <h2 className="text-lg font-semibold mb-4 text-white">Properties</h2>
         <p className="text-[var(--sidebar-text)]">Select an element to edit its properties.</p>
       </div>
@@ -183,7 +183,7 @@ return (
       bg-[var(--sidebar-primary)] 
       p-4 
       border-l border-[var(--sidebar-hover)] 
-      h-dvh flex-shrink-0 overflow-y-auto
+      flex-shrink-0 overflow-y-auto
     ">
     <div className="flex justify-between items-center mb-4">
       <h2 className="text-lg font-semibold text-white">
@@ -240,7 +240,7 @@ export default function DragPage() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row h-[600px]">
+    <div className="flex flex-col md:flex-row h-[700px]">
       <Canvas
         elements={elements}
         setElements={setElements}
