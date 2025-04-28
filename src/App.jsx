@@ -7,12 +7,10 @@ import DragPage from "./pages/DragPage";
 import Sidebar from "./components/Sidebar";
 import EditorSidebar from "./components/DragSidebar";
 
-function App() {
-  const deploymentBase = 'DragNDrop';
-  
+function App() {  
   const { pathname } = useLocation()
 
-  const showSideBar = pathname === `/${deploymentBase}/site-editor`;
+  const showSideBar = pathname === `/site-editor`;
   
   return (
     <div className="flex flex-col">
@@ -24,8 +22,8 @@ function App() {
         }
         <main className="flex-1">
           <Routes>
-            <Route path={`/${deploymentBase}`} element={<LandingPage />} />
-            <Route path={`/${deploymentBase}/site-editor`} element={<DragPage />} />
+            <Route path={`/`} element={<LandingPage />} />
+            <Route path={`/site-editor`} element={<DragPage />} />
           </Routes>
           <Footer />
         </main>

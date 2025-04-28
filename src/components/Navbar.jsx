@@ -16,15 +16,15 @@ import icon from '../assets/placeholder.svg';
 const Navbar = () => {
     return (
       <div className="flex between justify-between font-medium px-8 py-4 bg-[var(--background-primary)] text-white">
-        <Link to="/DragNDrop">
+        <Link to="/">
           <img src={icon} alt="Logo" className="w-36" />
         </Link>
         <nav className="hidden sm:flex gap-5 text-2xl my-auto">
-          <NavLink to="/DragNDrop">
+          <NavLink to="/">
             <p>Home</p>
             <hr className="w-3/4 hidden mx-auto bg-gray-400 h-[1.5]" />
           </NavLink>
-          <NavLink to="/DragNDrop/site-editor">
+          <NavLink to="/site-editor">
             <p>Editor</p>
             <hr className="w-3/4 hidden mx-auto bg-gray-400 h-[1.5]" />
           </NavLink>

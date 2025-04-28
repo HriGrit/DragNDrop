@@ -28,7 +28,7 @@ export default function LandingPage({ onStartBuilding }) {
         <p className="text-lg mb-6">
           Ready to bring your vision to life?
         </p>
-        <Link to='/DragNDrop/site-editor'>
+        <Link to='/site-editor'>
           <button
             onClick={onStartBuilding}
             className="text-white font-bold py-3 px-8 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-opacity-75 bg-[var(--btn-yellow-bg)] border border-[var(--btn-yellow-border)] hover:bg-[var(--btn-yellow-border)] transition duration-300 ease-in-out"
