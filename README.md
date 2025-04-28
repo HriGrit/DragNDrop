@@ -5,5 +5,3 @@ Inspired by Gutenberg Editor of WordPress, provides the functionality of Draggin
 # Deployment Link
 
 https://hrigrit.github.io/DragNDrop/
-
-Editor Url - https://hrigrit.github.io/DragNDrop/site-editor
